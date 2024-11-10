@@ -31,14 +31,14 @@ const Cart = () => {
               <div className="col-span-2 flex items-center gap-4">
                 <div className="w-24 h-24 shrink-0 p-2 rounded-md bg-white">
                   <img
-                    src="https://readymadeui.com/images/product14.webp"
+                    src="https://media.licdn.com/dms/image/v2/D5603AQGIn9clwejNkw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728665511573?e=1736985600&v=beta&t=ZvT_X1MYOqCBAnFxV19RQ_D5InWMbtYVFjGvkmFHaOk"
                     className="w-full h-full object-contain"
                   />
                 </div>
 
                 <div>
                   <h3 className="text-base font-bold text-black">
-                    Velvet Sneaker
+                  Manas Neeralagi Bondashekhar
                   </h3>
                   <h6 className="text-xs text-red-500 cursor-pointer mt-0.5">
                     Remove
