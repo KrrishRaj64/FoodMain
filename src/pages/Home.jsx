@@ -1,9 +1,16 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Lottie from "lottie-react";;
 import animationData from '../assets/Animation - 1731218580905.json';
 
 const Home = () => {
   return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 20 }}
+      transition={{ duration: 0.2 }}
+    >
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-4">
       {/* Lottie Animation */}
       <div className="w-3/4 sm:w-1/2 lg:w-1/3 mb-6">
@@ -18,6 +25,7 @@ const Home = () => {
       </p>
     </article>
     </div>
+    </motion.div>
   );
 };
 

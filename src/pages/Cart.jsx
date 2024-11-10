@@ -1,9 +1,17 @@
 import React from "react";
 import Lottie from "lottie-react";
-import animationData from '../assets/Animation - 1731227623624.json'; // Ensure this path is correct
+import animationData from '../assets/Animation - 1731232629417 (1).json'; // Ensure this path is correct
+import { motion } from 'framer-motion';
+
 
 const Cart = () => {
   return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 20 }}
+      transition={{ duration: 0.2 }}
+    >
     <div className="bg-white text-black p-8 min-h-screen">
       <div className="grid md:grid-cols-3 gap-4">
         <div className="md:col-span-2 p-4 rounded-md bg-gray-100">
@@ -159,6 +167,7 @@ const Cart = () => {
         </div>
       </div>
     </div>
+    </motion.div>
   );
 };
 
