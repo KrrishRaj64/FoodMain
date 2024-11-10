@@ -5,6 +5,8 @@ import imageThree from '../assets/three.jpg'; // Ensure the correct file
 import imageFour from '../assets/four.jpg'; // Ensure the correct file
 import imageFive from '../assets/five.jpg'; // Ensure the correct file
 import imageSix from '../assets/six.jpg'; // Ensure the correct file
+import Lottie from "lottie-react";
+import animationData from '../assets/Animation - 1731226949859.json';
 
 const Menu = () => {
   const cardData = [
@@ -42,7 +44,12 @@ const Menu = () => {
 
   return (
     <div className="flex flex-col items-center p-8 bg-gray-50 min-h-screen">
-      <h1 className="text-3xl font-bold mb-8">Our Menu</h1>
+      {/* Title with Lottie Animation */}
+      <div className="flex items-center mb-8">
+        <h1 className="text-3xl font-bold mr-4">Our Menu</h1>
+        <Lottie animationData={animationData} loop={true} className="w-12 h-12" />
+      </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {cardData.map((card, index) => (
           <div key={index} className="card bg-base-100 shadow-xl h-full">
