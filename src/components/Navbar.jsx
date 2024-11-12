@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">Food Paradise</a>
+        <Link to ='/' className="btn btn-ghost text-xl">Food Paradise</Link>
       </div>
 
       {/* Mobile Navigation - Hamburger Dropdown */}
@@ -62,15 +62,17 @@ const Navbar = () => {
         <Link to="/about" className="btn btn-ghost">About</Link>
 
         {/* Theme select */}
+        {/* Login / Sign Up buttons on desktop */}
+        <Link to="/login" className="btn btn-ghost ml-2">Login</Link>
+        <Link to="/signup" className="btn btn-ghost ml-2">Sign Up</Link>
+
         <select data-choose-theme className="btn hidden lg:block">
           <option value="lemonade">Lemonade</option>
           <option value="coffee">Coffee</option>
           <option value="valentine">Valentine</option>
         </select>
 
-        {/* Login / Sign Up buttons on desktop */}
-        <Link to="/login" className="btn btn-ghost ml-2">Login</Link>
-        <Link to="/signup" className="btn btn-ghost ml-2">Sign Up</Link>
+
       </div>
     </div>
   );
