@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { themeChange } from 'theme-change';
-import { useEffect } from 'react';
 
 
 const Navbar = () => {
