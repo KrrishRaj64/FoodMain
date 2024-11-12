@@ -5,7 +5,7 @@ const Signup = () => {
     <div className="min-h-screen bg-base-200 flex items-center justify-center">
       <div className="card lg:card-side bg-base-100 shadow-xl max-w-4xl w-full">
         <figure className="lg:w-1/2">
-          <img src="https://pixeldojo.ai/_next/image?url=https%3A%2F%2Fcdn.pixeldojo.ai%2Fpixeldojo%2Fgenerated-images%2F1717789940303-e8bzji1hz.png&w=3840&q=75" alt="Signup Image" className="object-cover w-full h-full" />
+          <img src="https://img.freepik.com/premium-vector/vector-frog-character-wizard-wearing-magic-hat-magic-wand-with-star-sticker-trendy-cartoon_615232-1913.jpg" alt="Signup Image" className="object-cover w-full h-full" />
         </figure>
         <div className="card-body lg:w-1/2">
           <h2 className="card-title text-2xl font-bold mb-6">Join Us</h2>

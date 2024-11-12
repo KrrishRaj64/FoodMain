@@ -6,7 +6,7 @@ const Login = () => {
       <div className="card lg:card-side bg-base-100 shadow-xl max-w-4xl w-full">
         <figure className="lg:w-1/2">
           <img
-            src="https://picsum.photos/seed/login/800/600"
+            src="https://static.vecteezy.com/system/resources/previews/039/675/181/non_2x/cute-frog-wizard-wearing-a-magic-hat-magic-animal-flat-illustration-isolated-on-white-background-vector.jpg"
             alt="Random"
             className="object-cover w-full h-full"
           />
