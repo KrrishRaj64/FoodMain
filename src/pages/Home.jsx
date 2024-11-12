@@ -101,7 +101,7 @@ const Home = () => {
       <Accordion />
       
       {/* Tab Navigation */}
-      <div role="tablist" className="tabs tabs-boxed w-full mb-8 mt-8">
+      <div role="tablist" className="tabs tabs-bordered w-full mb-16 mt-16">
         <a
           role="tab"
           className={`tab ${activeTab === 'seasonal' ? 'tab-active' : ''} text-xl font-medium`}

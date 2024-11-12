@@ -28,7 +28,15 @@ const About = () => {
             <article className="prose lg:prose-xl text-gray-900">
               <h1 className="text-5xl font-bold text-gray-900">Welcome to Food Paradise</h1>
               <p className="text-xl mt-4 text-gray-800">
-                At Food Paradise, we believe that food is more than just a meal — it's an experience...
+                At Food Paradise, we believe that food is more than just a meal — it's an experience. Our menu is crafted
+                with the finest ingredients, and our chefs pour their passion into every dish to ensure an unforgettable
+                dining experience. Whether you're looking for comfort food or a gourmet treat, Food Paradise is the place to
+                indulge your cravings.
+              </p>
+              <p className="text-xl text-gray-800">
+                Our mission is simple: to bring people together through the love of food. Each dish is prepared with care,
+                using fresh, high-quality ingredients to ensure the best possible taste. We strive to provide an atmosphere
+                where every bite brings joy, and every visit leaves a lasting impression.
               </p>
               <blockquote className="mt-8 p-4 bg-gray-100 border-l-4 border-blue-500 italic">
                 <p className="text-xl text-gray-700">{randomQuote}</p>
@@ -56,8 +64,16 @@ const About = () => {
             <article className="prose lg:prose-xl text-gray-900">
               <h2 className="text-5xl font-bold text-gray-900">Contact Us</h2>
               <p className="text-xl mt-4 text-gray-800">
-                Have any questions? Want to know more about our menu...
+                Have any questions or feedback? We’d love to hear from you! Whether you want to learn more about our menu,
+                ask about ingredients, or provide suggestions to improve your dining experience, our team is here to assist
+                you. Drop us a message, and we'll get back to you as soon as possible.
               </p>
+              <p className="text-xl mt-4 text-gray-800">
+                Feel free to reach out using the contact form below, or you can visit us at our location. We’re always happy
+                to connect with our guests and ensure that every meal is a memorable one.
+              </p>
+
+              {/* Review Form */}
               <form onSubmit={handleReviewSubmit} className="space-y-4 mt-6">
                 <div className="form-control">
                   <label htmlFor="name" className="label text-gray-900">
