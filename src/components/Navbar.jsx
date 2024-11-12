@@ -54,29 +54,31 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="flex-none gap-2">
-        <div className="dropdown dropdown-end">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-            <div className="w-10 rounded-full">
-              <img
-                alt="User Avatar"
-                src="https://usercontent.one/wp/manforhimself.com/wp-content/uploads/2022/02/ksi-dreadlock-bun-with-undercut-mens-hairstyles-man-for-himself-1-600x600.jpg?media=1728223447"
-              />
-            </div>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li>
-              <a className="justify-between">
-                Profile
-                <span className="badge">New</span>
-              </a>
-            </li>
-            <li><a>Settings</a></li>
-            <li><a>Logout</a></li>
-          </ul>
+      {/* Login / Sign Up Dropdown */}
+      <div className="dropdown dropdown-end">
+        <div tabIndex={0} role="button" className="btn m-1">
+          Login / Sign Up
         </div>
+        <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+          <li>
+            <Link
+              to="/login"
+              className="hover:bg-gray-200 p-2 rounded"
+            >
+              Login
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/signup"
+              className="hover:bg-gray-200 p-2 rounded"
+            >
+              Sign Up
+            </Link>
+          </li>
+        </ul>
       </div>
+    </div>
     </div>
   );
 };

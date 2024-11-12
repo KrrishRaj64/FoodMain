@@ -136,7 +136,7 @@ const Cart = () => {
         </div>
 
         {/* Bottom Right Lottie Animation */}
-        <motion.div
+        {/* <motion.div
       initial={{ y: 10 }}
       animate={{
         y: [10, 10, 10], // Maintains y at 10
@@ -156,7 +156,7 @@ const Cart = () => {
         animationData={animationData1}
         loop={false} // Set loop to false for controlled playback
       />
-    </motion.div>
+    </motion.div> */}
       </div>
     </motion.div>
   );
