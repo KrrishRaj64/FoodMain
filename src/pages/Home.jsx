@@ -7,18 +7,18 @@ const Home = () => {
   const [activeTab, setActiveTab] = useState('promotional');
 
   const seasonalItems = [
-    { title: 'Beverages', description: 'A warm and hearty pizza with seasonal ingredients.', price: '$15.99', imageUrl: 'https://images.unsplash.com/photo-1641311304269-1000f9dcbdb1?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { title: 'Autumn Salad', description: 'A fresh salad with autumn vegetables and a tangy dressing.', price: '$10.99', imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
+    { title: 'BlueBerry Smoothie', description: 'A refreshing tropical drink, perfect for summer.', price: '₹100', imageUrl: 'https://images.unsplash.com/photo-1457518919282-b199744eefd6?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { title: 'Autumn Salad', description: 'A fresh salad with autumn vegetables and a tangy dressing.', price: '₹90', imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
   ];
 
   const promotionalItems = [
-    { title: 'Holiday Burger', description: 'A festive burger with cranberry sauce and turkey.', price: '$12.99', imageUrl: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2598&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { title: 'Mango Smoothie', description: 'A refreshing tropical drink, perfect for summer.', price: '$6.99', imageUrl: 'https://images.unsplash.com/photo-1457518919282-b199744eefd6?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
+    {title: 'Beverages', description: 'A Cool and Refershing Branded Beverages', price: '₹50', imageUrl: 'https://images.unsplash.com/photo-1641311304269-1000f9dcbdb1?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { title: 'Holiday Burger', description: 'A festive burger with cranberry sauce and turkey.', price: '₹180', imageUrl: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2598&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
   ];
 
   const popularItems = [
-    { title: 'Classic Spaghetti', description: 'A timeless pasta dish with rich tomato sauce.', price: '$14.99', imageUrl: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { title: 'Margherita Pizza', description: 'A simple pizza with fresh mozzarella and basil.', price: '$11.99', imageUrl: 'https://images.unsplash.com/photo-1680405620826-83b0f0f61b28?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
+    { title: 'Classic Spaghetti', description: 'A timeless pasta dish with rich tomato sauce.', price: '₹150', imageUrl: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { title: 'Margherita Pizza', description: 'A simple pizza with fresh mozzarella and basil.', price: '₹220', imageUrl: 'https://images.unsplash.com/photo-1680405620826-83b0f0f61b28?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
   ];
 
   const getTabContent = () => {

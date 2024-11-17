@@ -39,9 +39,9 @@ const About = () => {
                 where every bite brings joy, and every visit leaves a lasting impression.
               </p>
               <blockquote className="mt-8 p-4 bg-gray-100 border-l-4 border-blue-500 italic">
-                <p className="text-xl text-gray-700">{randomQuote}</p>
+                <p className="text-xl text-gray-700">{"“You don’t need a silver fork to eat good food.”"}</p>
                 <footer className="mt-4 text-lg text-right text-gray-700 font-medium">
-                  - Aravind P Sagar
+                  - Paul Prudhomme
                 </footer>
               </blockquote>
 

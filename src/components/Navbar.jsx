@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
-        <Link to ='/' className="btn btn-ghost text-xl">Food Paradise</Link>
+        <Link to ='/' className="btn btn-ghost text-xl">The Lily Pad</Link>
       </div>
 
       {/* Mobile Navigation - Hamburger Dropdown */}
@@ -59,7 +59,7 @@ const Navbar = () => {
         <Link to="/" className="btn btn-ghost">Home</Link>
         <Link to="/menu" className="btn btn-ghost">Menu</Link>
         <Link to="/contact" className="btn btn-ghost">Cart</Link>
-        <Link to="/about" className="btn btn-ghost">About</Link>
+        <Link to="/about" className="btn btn-ghost">Contact Us</Link>
 
         {/* Theme select */}
         {/* Login / Sign Up buttons on desktop */}
@@ -67,9 +67,9 @@ const Navbar = () => {
         <Link to="/signup" className="btn btn-ghost ml-2">Sign Up</Link>
 
         <select data-choose-theme className="btn hidden lg:block">
+          <option value="valentine">Valentine</option>
           <option value="lemonade">Lemonade</option>
           <option value="coffee">Coffee</option>
-          <option value="valentine">Valentine</option>
         </select>
 
 

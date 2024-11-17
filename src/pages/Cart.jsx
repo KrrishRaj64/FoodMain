@@ -81,7 +81,7 @@ const Cart = () => {
                   </div>
                 </div>
                 <div className="ml-auto">
-                  <h4 className="text-base font-bold text-black">$20.00</h4>
+                  <h4 className="text-base font-bold text-black">₹20.00</h4>
                 </div>
               </div>
             </div>
@@ -105,16 +105,16 @@ const Cart = () => {
 
             <ul className="mt-8 space-y-4 text-black">
               <li className="flex flex-wrap gap-4 text-base">
-                Discount <span className="ml-auto font-bold">$0.00</span>
+                Discount <span className="ml-auto font-bold">₹0.00</span>
               </li>
               <li className="flex flex-wrap gap-4 text-base">
-                Shipping <span className="ml-auto font-bold">$2.00</span>
+                Shipping <span className="ml-auto font-bold">₹50.00</span>
               </li>
               <li className="flex flex-wrap gap-4 text-base">
-                Tax <span className="ml-auto font-bold">$4.00</span>
+                Tax <span className="ml-auto font-bold">₹100.00</span>
               </li>
               <li className="flex flex-wrap gap-4 text-base font-bold">
-                Total <span className="ml-auto">$52.00</span>
+                Total <span className="ml-auto">₹170.00</span>
               </li>
             </ul>
 

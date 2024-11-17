@@ -14,37 +14,37 @@ const Menu = () => {
     {
       title: "Refreshing Drink",
       description: "A cool and refreshing beverage to quench your thirst.",
-      price: "$4.99",
+      price: "₹80",
       img: imageOne,
     },
     {
       title: "Delicious Pasta",
       description: "A delightful pasta dish with fresh ingredients.",
-      price: "$8.99",
+      price: "₹180",
       img: imageTwo,
     },
     {
       title: "Gourmet Burger",
       description: "A juicy burger with fresh toppings.",
-      price: "$12.99",
+      price: "₹200",
       img: imageThree,
     },
     {
       title: "Exotic Pizza",
       description: "A pizza with unique and exotic flavors.",
-      price: "$14.99",
+      price: "₹300",
       img: imageFour,
     },
     {
       title: "Classic Pancakes",
       description: "Soft and fluffy pancakes with maple syrup.",
-      price: "$7.99",
+      price: "₹150",
       img: imageFive,
     },
     {
       title: "Exotic Salad",
       description: "A fresh and vibrant salad with unique ingredients.",
-      price: "$9.99",
+      price: "₹100",
       img: imageSix,
     },
   ];

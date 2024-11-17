@@ -18,7 +18,7 @@ const Timeline = () => {
                 clipRule="evenodd" />
             </svg>
           </div>
-          <div className="timeline-end timeline-box">For Real</div>
+          <div className="timeline-end timeline-box">Opening of The Lily Pad</div>
           <hr />
         </li>
         <li>
@@ -36,7 +36,7 @@ const Timeline = () => {
                 clipRule="evenodd" />
             </svg>
           </div>
-          <div className="timeline-end timeline-box">First Restro Opened</div>
+          <div className="timeline-end timeline-box">First International Branch Opened</div>
           <hr />
         </li>
         <li>
@@ -54,7 +54,7 @@ const Timeline = () => {
                 clipRule="evenodd" />
             </svg>
           </div>
-          <div className="timeline-end timeline-box">Got Covered in Newspapers</div>
+          <div className="timeline-end timeline-box">Recived Our Michelin star</div>
           <hr />
         </li>
         <li>

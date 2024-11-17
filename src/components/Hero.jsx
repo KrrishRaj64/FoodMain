@@ -17,7 +17,7 @@ const Hero = () => {
     {/* Left Side - Hero Text Content */}
     <div className="flex-1 md:pr-16 text-center md:text-left">
       <h1 className="text-5xl font-bold text-gray-800 mb-6">
-        Welcome to Food Paradise
+        Welcome to The Lily Pad
       </h1>
       <p className="text-xl text-gray-600 max-w-lg">
         Discover our wide selection of delicious and carefully crafted dishes. Whether you're
