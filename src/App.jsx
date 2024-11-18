@@ -9,27 +9,30 @@ import Menu from './pages/Menu';
 import Cart from './pages/Cart';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import { CartProvider } from './components/CartContext'; // Import CartProvider
 
 function App() {
   const location = useLocation();
 
   return (
-    <div className="flex flex-col min-h-screen bg-base-100">
-      <Navbar />
-      <main className="flex-grow">
-        <AnimatePresence mode="wait">
-          <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/menu" element={<Menu />} />
-            <Route path="/contact" element={<Cart />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-          </Routes>
-        </AnimatePresence>
-      </main>
-      <Footer />
-    </div>
+    <CartProvider>
+      <div className="flex flex-col min-h-screen bg-base-100">
+        <Navbar />
+        <main className="flex-grow">
+          <AnimatePresence mode="wait">
+            <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/menu" element={<Menu />} />
+              <Route path="/contact" element={<Cart />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
+            </Routes>
+          </AnimatePresence>
+        </main>
+        <Footer />
+      </div>
+    </CartProvider>
   );
 }
 
