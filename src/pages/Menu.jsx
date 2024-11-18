@@ -6,6 +6,12 @@ import imageThree from '../assets/three.jpg';
 import imageFour from '../assets/four.jpg';
 import imageFive from '../assets/five.jpg';
 import imageSix from '../assets/six.jpg';
+import imageSeven from '../assets/seven.jpg';
+import imageEight from '../assets/eight.jpg';
+import imageNine from '../assets/nine.jpg';
+import imageTen from '../assets/ten.jpg';
+import imageEleven from '../assets/eleven.jpg';
+import imageTwelve from '../assets/tweleve.jpg';
 import Lottie from 'lottie-react';
 import animationData from '../assets/Animation - 1731226949859.json';
 import { motion } from 'framer-motion';
@@ -22,6 +28,13 @@ const Menu = () => {
     { title: 'Exotic Pizza', description: 'Unique flavors.', price: 300, img: imageFour },
     { title: 'Classic Pancakes', description: 'Fluffy pancakes.', price: 150, img: imageFive },
     { title: 'Exotic Salad', description: 'Fresh salad.', price: 100, img: imageSix },
+    { title: 'Tacos',description:'Flavorful wraps',price:120,img:imageSeven},
+    { title: 'Donuts',description:'Fluffy delight',price:80,img:imageEight},
+    { title: 'Baked Alaska',description:'Fiery elegance',price:180,img:imageNine},
+    { title: 'Macroons',description:'Creamy Goodness',price:120,img:imageTen},
+    { title: 'Ratatouille',description:'Vegetable medley',price:280,img:imageEleven},
+    { title: 'Ramen',description:'Soul Food',price:250,img:imageTwelve}
+
   ];
 
   const handleOrderNow = (itemTitle) => {

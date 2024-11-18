@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useCart } from '../components/CartContext';
-
 const Cart = () => {
   const { cart, clearCart } = useCart();
   const [isOrderPlaced, setIsOrderPlaced] = useState(false);
