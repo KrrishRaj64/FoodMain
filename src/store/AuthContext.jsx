@@ -17,35 +17,50 @@ export const AuthContext = createContext({
 const  AuthProvider  = ({ children }) => {
 
     const [currentUser,  setCurrentUser] =  useState(null);
-    const [isLoading,  setIsLoading] =  useState(false);
+    const [loading, setLoading] = useState(false);
     const [isAuthLoading,  setIsAuthLoading] =  useState(true);
     const  navigate  =  useNavigate();
 
     //Sign up
-    const signUp = (creds) => {
-        setIsLoading(true);
-        firebaseSignUp(creds)
-            .then(async signUpResult => {
-                const { user } = signUpResult; //object destructuring
-                if (user) { setCurrentUser(user);
-                //redirect the user on the targeted route
-                navigate('/', { replace:  true }); }
-            else {
-                    alert("User not found.")
-                }
-                setIsLoading(false);
-            })
-            .catch(error  => {
-                //check for error
-                if (error.code  ===  'auth/email-already-in-use') {
-                    console.log("email-already-in-use")
-                } else if (error.code  ===  'auth/too-many-requests') {
-                    alert("Too many requests, please try again after a while.")
-                }
-                // you can check for more error like email not valid or something
-                setIsLoading(false);
-            });
-    }
+    // const signUp = (creds) => {
+    //     setIsLoading(true);
+    //     firebaseSignUp(creds)
+    //         .then(async signUpResult => {
+    //             const { user } = signUpResult; //object destructuring
+    //             if (user) { setCurrentUser(user);
+    //             //redirect the user on the targeted route
+    //             navigate('/', { replace:  true }); }
+    //         else {
+    //                 alert("User not found.")
+    //             }
+    //             setIsLoading(false);
+    //         })
+    //         .catch(error  => {
+    //             //check for error
+    //             if (error.code  ===  'auth/email-already-in-use') {
+    //                 console.log("email-already-in-use")
+    //             } else if (error.code  ===  'auth/too-many-requests') {
+    //                 alert("Too many requests, please try again after a while.")
+    //             }
+    //             // you can check for more error like email not valid or something
+    //             setIsLoading(false);
+    //         });
+    // }
+    const signUp = async ({ email, password }) => {
+        setLoading(true);
+        try {
+            const result = await createUserWithEmailAndPassword(firebaseAuth, email, password);
+            setCurrentUser(result.user); // Update user context
+            navigate('/', { replace: true }); // Redirect to Home page
+            console.log('Sign-up successful:', result.user);
+        } catch (error) {
+            console.error('Error during sign-up:', error.message);
+            alert(`Sign-up failed: ${error.message}`);
+        } finally {
+            setLoading(false);
+        }
+    };
+
 
     //Sign in
     const  signIn = async (creds,  onSuccess) => {
@@ -104,7 +119,9 @@ const  AuthProvider  = ({ children }) => {
     },  []);
 
     return (
-        <AuthContext.Provider  value={authValues}>{children}</AuthContext.Provider>
+        <AuthContext.Provider value={{ currentUser, signUp, loading }}>
+            {children}
+        </AuthContext.Provider>
     );
 };
 
