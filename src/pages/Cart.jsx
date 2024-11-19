@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useCart } from '../components/CartContext';
+import Lottie from "lottie-react";
+import { motion } from "framer-motion";
+import animationData1 from "../assets//Animation - 1731262377297.json"; // Replace with your Lottie JSON file path
+
 const Cart = () => {
   const { cart, clearCart } = useCart();
   const [isOrderPlaced, setIsOrderPlaced] = useState(false);
+
+  const lottieRef = useRef(); // Reference for the Lottie animation
 
   // Calculate the total price
   const totalPrice = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
@@ -74,8 +80,27 @@ const Cart = () => {
           </div>
         </div>
       )}
+
+      {/* Bottom Right Lottie Animation */}
+     {/* Bottom Right Lottie Animation */}
+<motion.div
+  initial={{ y: 0 }}
+  animate={{ y: [0, -10, 0] }} // Smooth up-and-down movement
+  transition={{
+    duration: 4,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="fixed bottom-0 right-0 w-[600px] h-[600px] pointer-events-none" // Increased size
+>
+  <Lottie
+    lottieRef={lottieRef}
+    animationData={animationData1}
+    loop={true} // Enables continuous playback
+  />
+</motion.div>
     </div>
   );
 };
 
-export default Cart;
+export default Cart; 
